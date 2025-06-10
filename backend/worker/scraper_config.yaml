@@ -1,0 +1,8 @@
+- site_name: "Futurepedia"
+  url: "https://www.futurepedia.io/"
+  target_selector: ".tool-card" # 툴 목록을 감싸는 CSS 선택자
+  metadata_selectors:
+    title: ".tool-title"
+    category: ".tool-category"
+    description: ".tool-description"
+  # ... 기타 사이트 설정 

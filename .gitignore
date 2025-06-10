@@ -1,0 +1,6 @@
+venv/
+__pycache__/
+*.pyc
+processed_data_storage/
+raw_html_storage/
+.pytest_cache/ 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Tool Search</title>
+    <meta name="api-base-url" content="http://127.0.0.1:8081">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Tool Search</h1>
+
+        <div class="version-tabs">
+            <button class="tab-button active" data-version="ai">AI 전용</button>
+            <button class="tab-button" data-version="dev">개발자용</button>
+            <button class="tab-button" data-version="office">일반 사무용</button>
+            <button class="tab-button" data-version="url_add">URL 추가</button>
+        </div>
+
+        <div id="ai_content" class="tab-content active">
+            <form id="searchForm">
+                <input type="text" id="searchInput" placeholder="AI 도구 검색..." autofocus>
+                <button type="submit">검색</button>
+            </form>
+            <div id="results" class="results-container"></div>
+        </div>
+
+        <div id="dev_content" class="tab-content">
+            <p>개발자용 도구 검색 기능이 여기에 표시됩니다.</p>
+        </div>
+
+        <div id="office_content" class="tab-content">
+            <p>일반 사무용 도구 검색 기능이 여기에 표시됩니다.</p>
+        </div>
+
+        <div id="url_add_content" class="tab-content">
+            <h2>새로운 URL 데이터 추가</h2>
+            <input type="text" id="urlInputProcess" placeholder="여기에 URL을 입력하세요 (예: https://example.com)" class="input-field">
+            <button id="processUrlButtonProcess" class="submit-button">URL 처리 및 인덱싱</button>
+            <div id="urlProcessResultDisplay" class="result-display"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
